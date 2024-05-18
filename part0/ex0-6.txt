@@ -1,0 +1,10 @@
+    Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+    Server-->Browser: HTML SPA
+    Browser->Server: HTTP GET /exampleapp/spa/main.js
+    Server-->Browser: main.js
+    Browser->Server: HTTP GET /exampleapp/spa/styles.css
+    Server-->Browser: styles.css
+    Browser->Server: HTTP GET /exampleapp/data.json
+    Server-->Browser: JSON with notes
+    Browser->Server: HTTP POST /exampleapp/new_note_spa
+    Server-->Browser: HTTP 201 {message: "note created"}
